@@ -1,0 +1,6 @@
+-- +goose Up
+CREATE TABLE IF NOT EXISTS photo (
+    id SERIAL PRIMARY KEY,
+    file BYTEA NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
